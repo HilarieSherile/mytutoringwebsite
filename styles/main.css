@@ -32,44 +32,49 @@ p {
     justify-content: space-between;
     height: 72px;
     padding: 0px 20px;              /* slim height + horizontal padding */
-    background: linear-gradient(90deg, #0b0b42, #15155c);
+    background: linear-gradient(90deg, rgb(37, 37, 95), #2b2b57);
     color: rgb(169, 163, 163);
-    font-size: 17px; 
-
+    font-size: 22px; 
+    padding-left: 70px;
+    padding-right: 60px;
+    position: sticky;
+    top: 0;
 }
 .nav-links {
     display: flex;
-    align-items: center;
     gap: 32px;
 }
 
-.nav-links a {
+.nav-links a:not(.home) {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    transition: text-decoration 0.3s;
 }
 
-.nav-links a.active {
-    color: #e7a81e;
+.home {
+    color: rgb(222, 99, 33);
     text-decoration: underline;
     cursor: pointer;
+    font-size: 20px;
 }
 
-
-.nav-link:hover {
+.nav-links a:not(.home):hover {
     background-color: rgba(231, 167, 145, 0.2);
     text-decoration: underline;
 }
 
 
+
 .book-session button {
-    background-color: rgb(231, 168, 30);
+    background-color: rgb(180, 148, 5);
     color: rgb(255, 255, 255);
 
-    width: 210px;
-    height: 40px;
+    width: 230px;
+    height: 35px;
 
-    font-size: 14px;  
+
+    font-size: 17px;  
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -93,10 +98,10 @@ p {
 
 .book-session button:hover {
     background-color: rgb(245, 245, 245);
-    color: rgb(11, 11, 66);
+    color: rgb(37, 37, 95);
     font-weight: lighter;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 19px;
 
 }
 
@@ -109,14 +114,15 @@ p {
     display: flex;
     align-items: center;            /* vertically centered */
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
+    padding-bottom: 25px;
 }
 
 
 .studentpic{
     width: 300px;
     border-radius: 10px;
-    border-color:rgb(11, 11, 66);
+    border-color:rgb(37, 37, 95);
     border-style:solid;
     border-width: 5px;
     background-color: rgb(217, 217, 181);
@@ -129,6 +135,7 @@ p {
     margin: 55px;
     color: white;
 }
+
 
 .title-and-check-second-div{
     display: inline-block;
@@ -152,4 +159,124 @@ p {
     font-size: 90px;
     line-height: 1;
     margin: 0;
+}
+
+.booking-section{
+    background-color: rgb(37, 37, 95);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:25px;
+}
+
+.title-thirdsection{
+    font-size: 32px;
+   
+}
+.subtitle {
+    font-size: 22px;
+   
+}
+
+.textsection{
+    background-color: rgb(37, 37, 95);
+    display:grid;
+    grid-template-columns: minmax(0,1fr) 720px;
+    padding: 30px;
+    color: white;
+    gap: 25px;
+    padding-left: 160px;
+}
+
+.text-leftside{
+    display: inline-block;
+    font-size: 23px;
+    align-items: center;
+}
+.text-rightside {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.text-rightside2{
+    display: inline;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    width: 600px;
+}
+.textboxinfo {
+    margin-top: 30px;
+    align-items: center;
+    width: 550px;
+}
+
+.userinput{
+    font-size: 15px;
+
+    border-radius: 20px;
+    width: 250px;
+    height: 25px;
+    border:2px solid;
+    background-color: white;
+    border-color: white;
+    transition: background-color: 0.3s ease;
+}
+
+
+.info {
+    font-size: 15px;
+    border-radius: 20px;
+    width: 550px;
+    height: 120px;
+    align-items: center;
+    border-radius: 20px;
+
+    border:2px solid;
+    background-color: white;
+    border-color: white;
+    transition: background-color: 0.3s ease;
+
+
+}
+
+
+.userinput:focus,
+.userinput:hover,
+.info:focus,
+.info:hover {
+    background-color: #b6b6ee;
+
+}
+.orangetext {
+    color: rgb(222, 99, 33);
+    text-decoration: underline;
+}
+
+.submit {
+    background-color: rgba(226, 115, 69,1);
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+}
+
+.submit-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 170px;
+    border: none;
+    transition: background-color: 0.3s ease;
+}
+
+.submit:hover{
+    background-color: black;
 }
